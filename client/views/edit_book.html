@@ -1,0 +1,52 @@
+<a href="#/books">Go Back</a>
+<div class="card">
+    <div class="card-header">
+      Edit Book
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <form ng-submit="updateBook()" ng-init="getBook()" class="col-md-12" >
+                <div class="form-group">
+                    <label for="bookTitle">Title</label>
+                    <input type="text" ng-model="book.title" class="form-control" id="bookTitle" placeholder="Enter title">
+                </div>
+                <div class="form-group">
+                    <label for="bookGenre">Genre</label>
+                    <select ng-model="book.genre" class="form-control" id="bookGenre" placeholder="Select genre">
+                        <option value="Suspense">Suspense</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Nonfiction">Nonfiction</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bookAuthor">Author</label>
+                    <input type="text" ng-model="book.author" class="form-control" id="bookAuthor" placeholder="Author">
+                </div>
+                <div class="form-group">
+                    <label for="bookPublisher">Author</label>
+                    <input type="text" ng-model="book.publisher" class="form-control" id="bookPublisher" placeholder="Publisher">
+                </div>
+                <div class="form-group">
+                    <label for="bookPages">Pages</label>
+                    <input type="text" ng-model="book.pages" class="form-control" id="bookPages" placeholder="Pages">
+                </div>
+                <div class="form-group">
+                    <label for="bookDescription">Description</label>
+                    <textarea type="text" ng-model="book.description" class="form-control" id="bookDescription" placeholder="Description">
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label for="bookImage">Image URL</label>
+                    <input type="text" ng-model="book.image_url" class="form-control" id="bookImage" placeholder="Image URL">
+                </div>
+                <div class="form-group">
+                    <label for="bookBuy">Buy URL</label>
+                    <input type="text" ng-model="book.buy_url" class="form-control" id="bookBuy" placeholder="Buy URL">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+  </div>
